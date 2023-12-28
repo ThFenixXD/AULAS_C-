@@ -46,9 +46,13 @@
     <Compile Include="Aluno.cs" />
     <Compile Include="Barraquinha.cs" />
     <Compile Include="Calculadora.cs" />
+    <Compile Include="Clientes.cs" />
+    <Compile Include="ContaBancaria.cs" />
     <Compile Include="ConversorDeMoeda.cs" />
     <Compile Include="Funcionario.cs" />
+    <Compile Include="Pensionato.cs" />
     <Compile Include="Pessoa.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

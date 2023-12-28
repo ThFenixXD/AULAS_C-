@@ -524,6 +524,232 @@ namespace Teste
 
             //Console.ReadKey();
 
+            //Produto p = new Produto("TV", 500, 10);
+
+            //p.Nome = "T";
+
+            //Console.WriteLine(p.Nome);
+            //Console.WriteLine(p.Preco);
+            //Console.WriteLine(p.Quantidade);
+
+            //Console.ReadKey();
+
+            //============== ORDEM SUGERIDA =====================
+
+            //Atributos privados
+            //Propriedades autoimplementadas
+            //Construtores
+            //Propriedades customizadas
+            //Outros métodos de classe
+
+
+            //============== MODIFICADORES DE ACESSO =====================
+
+            //|                    | própria | subclasses  |   classes   | subclasses fora | classes fora |
+            //|                    | classe  | no assembly | do assembly |  do assembly    |  do assembly |
+            //| public             |    X    |      X      |      X      |        X        |       X      |
+            //| protected internal |    X    |      X      |      X      |        X        |              |
+            //| internal           |    X    |      X      |      X      |                 |              |
+            //| protected          |    X    |      X      |             |        X        |              |
+            //| private protected  |    X    |      X      |             |                 |              |
+            //| private            |    X    |             |             |                 |              |
+
+            //Assembly é um projeto
+
+            //Console.WriteLine("|--Cadastro Bancário--|");
+
+            //Console.WriteLine();
+            //Console.Write("Insira o número da conta: ");
+            //int numeroConta = Convert.ToInt32(Console.ReadLine());
+
+            //Console.Write("Insira o nome do titular da conta: ");
+            //string nomeTitular = Console.ReadLine();
+
+            //Console.Write("Haverá depósito inicial (s/n) ");
+            //string x = Console.ReadLine();
+
+            //if (x == "s")
+            //{
+            //    Console.Write("Insira o valor do depósito inicial: ");
+            //    double depositoInicial = Convert.ToDouble(Console.ReadLine());
+
+            //    ContaBancaria conta = new ContaBancaria(numeroConta, nomeTitular, depositoInicial);
+
+            //    Console.WriteLine();
+            //    Console.WriteLine("Dados da conta:");
+            //    Console.WriteLine( conta );
+
+            //    Console.WriteLine();
+            //    Console.Write("Digite um valor para depósito: ");
+            //    double deposito = Convert.ToDouble(Console.ReadLine());
+
+            //    conta.DepositoBancario(deposito);
+
+            //    Console.WriteLine("Dados da conta atualizados ");
+            //    Console.WriteLine( conta );
+
+            //    Console.WriteLine();
+            //    Console.Write("Digite um valor para saque: ");
+            //    double saque = Convert.ToDouble(Console.ReadLine());
+
+            //    conta.SaqueBancario(saque);
+
+            //    Console.WriteLine("Dados da conta atualizados ");
+            //    Console.WriteLine( conta );
+
+            //    Console.ReadKey();
+            //}
+            //else
+            //{
+            //    ContaBancaria conta = new ContaBancaria(numeroConta, nomeTitular);
+
+            //    Console.WriteLine();
+            //    Console.WriteLine("Dados da conta:");
+            //    Console.WriteLine(conta);
+
+            //    Console.WriteLine();
+            //    Console.Write("Digite um valor para depósito: ");
+            //    double deposito = Convert.ToDouble(Console.ReadLine());
+
+            //    conta.DepositoBancario(deposito);
+
+            //    Console.WriteLine("Dados da conta atualizados ");
+            //    Console.WriteLine(conta);
+
+            //    Console.WriteLine();
+            //    Console.Write("Digite um valor para saque: ");
+            //    double saque = Convert.ToDouble(Console.ReadLine());
+
+            //    conta.SaqueBancario(saque);
+
+            //    Console.WriteLine("Dados da conta atualizados ");
+            //    Console.WriteLine(conta);
+
+            //    Console.ReadKey();
+            //}
+
+            //double? x = null;
+            //double? y = 10.0;
+
+            //Console.WriteLine(x.GetValueOrDefault());
+            //Console.WriteLine(y.GetValueOrDefault());
+
+            //Console.WriteLine(x.HasValue);
+            //Console.WriteLine(y.HasValue);
+
+
+            //if (x.HasValue)
+            //{
+            //    Console.WriteLine(x.Value);
+            //}
+            //else
+            //    Console.WriteLine("X is null");
+
+            //if (y.HasValue)
+            //{
+            //    Console.WriteLine(y.Value);
+            //}
+            //else
+            //    Console.WriteLine("X is null");
+
+            //Console.ReadKey();
+
+            //double? x = null;
+
+            //double? y = 10;
+
+            //double a = x ?? 5;
+
+            //double b = y ?? 5;
+
+            //Console.WriteLine(a);
+            //Console.WriteLine(b);
+
+            //Console.ReadKey();
+
+            //int n = Convert.ToInt32(Console.ReadLine());
+
+            //double[] vect = new double[n];
+
+            //for (int i = 0; i < n; i++)
+            //{
+            //    vect[i] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //}
+
+            //double sum = 0.0;
+            //for (int i = 0; i< n; i++)
+            //{
+            //    sum += vect[i];
+            //}
+
+            //double avg = sum/n;
+
+            //Console.WriteLine(avg);
+
+            //Console.ReadKey();
+
+            //int n = int.Parse(Console.ReadLine());
+
+            //Product[] vect = new Product[n];
+
+            //for (int i = 0; i < n; i++)
+            //{
+            //    string name = Console.ReadLine();
+            //    double price = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //    vect[i] = new Product { Name = name, Price = price };
+            //}
+
+            //double sum = 0.0;
+            //for (int i = 0; i < n; i++)
+            //{
+            //    sum += vect[i].Price;
+            //}
+
+            //double avg = sum / n;
+            //Console.WriteLine("Average price = " + avg.ToString("F2", CultureInfo.InvariantCulture));
+
+            //Console.ReadKey();
+
+            Console.WriteLine("How many rooms wiil be rented?");
+            int n = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Clientes[] clientes = new Clientes[n];
+
+            for (int i = 0; i < n; i++)
+            {
+                int j = i+1;
+                Console.WriteLine("Rent #" + j);
+
+                Console.Write("Name: ");
+                string name = Console.ReadLine();
+
+                Console.Write("E-mail: ");
+                string email = Console.ReadLine();
+
+                Console.Write("Room: ");
+                int room = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                Console.WriteLine();
+
+                clientes[i] = new Clientes { Name = name, Email = email, Room = room };
+            }
+
+            Console.WriteLine("Busy Rooms:");
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (clientes[i] != null)
+                {
+                    Console.WriteLine(i + ": " + clientes[i]);
+                }
+
+            }
+
+            Console.ReadKey();
+
+
+
+
 
         }
     }
