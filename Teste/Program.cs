@@ -710,48 +710,328 @@ namespace Teste
 
             //Console.ReadKey();
 
-            Console.WriteLine("How many rooms wiil be rented?");
-            int n = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //===== MINHA VERSÃO ===
 
-            Clientes[] clientes = new Clientes[n];
+            //Console.WriteLine("How many rooms wiil be rented?");
+            //int n = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            for (int i = 0; i < n; i++)
-            {
-                int j = i+1;
-                Console.WriteLine("Rent #" + j);
+            //Clientes[] clientes = new Clientes[n];
 
-                Console.Write("Name: ");
-                string name = Console.ReadLine();
+            //for (int i = 0; i < n; i++)
+            //{
+            //    int j = i+1;
+            //    Console.WriteLine("Rent #" + j);
 
-                Console.Write("E-mail: ");
-                string email = Console.ReadLine();
+            //    Console.Write("Name: ");
+            //    string name = Console.ReadLine();
 
-                Console.Write("Room: ");
-                int room = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //    Console.Write("E-mail: ");
+            //    string email = Console.ReadLine();
 
-                Console.WriteLine();
+            //    Console.Write("Room: ");
+            //    int room = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-                clientes[i] = new Clientes { Name = name, Email = email, Room = room };
-            }
+            //    Console.WriteLine();
 
-            Console.WriteLine("Busy Rooms:");
+            //    clientes[i] = new Clientes { Name = name, Email = email, Room = room };
+            //}
 
-            for (int i = 0; i < 10; i++)
-            {
-                if (clientes[i] != null)
-                {
-                    Console.WriteLine(i + ": " + clientes[i]);
-                }
+            //Console.WriteLine("Busy Rooms:");
 
-            }
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    if (clientes[i] != null)
+            //    {
+            //        Console.WriteLine(i + ": " + clientes[i]);
+            //    }
 
-            Console.ReadKey();
+            //}
+
+            //Console.ReadKey();
+
+            //===== CORREÇÃO =====
 
 
+            //Estudante[] vect = new Estudante[10];
+
+            //Console.Write("Quantos quartos serão alugados? ");
+            //int n = int.Parse(Console.ReadLine());
+
+            //for (int i = 1; i <= n; i++)
+            //{
+
+            //    Console.WriteLine();
+            //    Console.WriteLine($"Aluguel #{i}:"); ;
+            //    Console.WriteLine("Nome: ");
+            //    string nome = Console.ReadLine();
+            //    Console.WriteLine("Email: ");
+            //    string email = Console.ReadLine();
+            //    Console.WriteLine("Quarto: ");
+            //    int quarto = int.Parse(Console.ReadLine());
+            //    vect[quarto] = new Estudante(nome, email);
+            //}
+
+            //Console.WriteLine();
+            //Console.WriteLine("Quartos ocupados:");
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    if (vect[i] != null){
+            //        Console.WriteLine(i + ": " + vect[i]);
+            //    }
+            //}
+
+            //Console.ReadKey();
+
+            //int s1 = Calculator.Sum(2, 3);
+            //int s2 = Calculator.Sum(2, 3, 4);
+
+            //Console.WriteLine(s1);
+            //Console.WriteLine(s2);
+
+            //Console.ReadKey();
+
+            //MODIFICADOR REF
+
+            //int a = 10;
+            //Calculator.Triple(ref a);
+            //Console.WriteLine(a);
 
 
+            //MODIFICADOR OUT
 
+            //int a = 10;
+            //int triple;
+            //Calculator.Triple(a, out triple);
+            //Console.WriteLine(triple);
+
+            //========== LAÇO FOR EACH ============
+
+            //string[] vect = new string[] { "Maria", "Bob", "Alex" };
+
+            //foreach (string obj in vect)
+            //{
+            //    Console.WriteLine(obj);
+            //}
+
+            //========== LISTAS ============
+
+            //List<string> list = new List<string>();
+
+            //list.Add("Maria");
+            //list.Add("Alex");
+            //list.Add("Bob");
+            //list.Add("Ana");
+
+            //list.Insert(2, "Marco");
+
+            //foreach (string obj in list)
+            //{
+            //    Console.WriteLine(obj);
+            //}
+            //Console.WriteLine("List count: " + list.Count);
+
+            //Console.WriteLine("=====================FIND================================");
+
+            ////string s1 = list.Find(Test);
+            //string s1 = list.Find(x => x[0] == 'A');
+            //Console.WriteLine("First 'A': " + s1);
+
+            //string s2 = list.FindLast(x => x[0] == 'A');
+            //Console.WriteLine("First 'A': " + s2);
+
+            //int pos1 = list.FindIndex(x => x[0] == 'A');
+            //Console.WriteLine("First 'A': " + pos1);
+
+            //int pos2 = list.FindLastIndex(x => x[0] == 'A');
+            //Console.WriteLine("First 'A': " + pos2);
+
+            //List<string> list2 = list.FindAll(x => x.Length == 5);
+
+            //foreach (string obj in list2)
+            //{
+            //    Console.WriteLine(obj);
+            //}
+            //Console.WriteLine("List count: " + list2.Count);
+
+            //Console.WriteLine("===================REMOVE AT=======================================");
+
+            //list.RemoveAt(2);
+            //foreach (string obj in list)
+            //{
+            //    Console.WriteLine(obj);
+            //}
+
+
+            //Console.WriteLine("=================REMOVE=========================================");
+
+            //list.Remove("Alex");
+            //foreach (string obj in list)
+            //{
+            //    Console.WriteLine(obj);
+            //}
+
+            //Console.WriteLine("========================REMOVE ALL==================================");
+
+            //list.RemoveAll(x => x[0] == 'M');
+            //foreach (string obj in list)
+            //{
+            //    Console.WriteLine(obj);
+            //}
+
+            //Console.WriteLine("========================REMOVE RANGE==================================");
+
+            //list.RemoveRange(2,2);
+            //foreach (string obj in list)
+            //{
+            //    Console.WriteLine(obj);
+            //}
+
+
+            //static bool Test(string s)  
+            //{
+            //    return s[0] == 'A';
+            //}
+
+            //Console.WriteLine("Quantos funcionarios quer adicionar?");
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //n = n + 1;
+
+            //List<Funcionarios> funcionarios = new List<Funcionarios>();
+
+            //for (int i = 1; i < n; i++)
+            //{
+
+            //    Console.WriteLine("Empregado #" + i + ":");
+            //    Console.Write("Id: ");
+            //    int id = Convert.ToInt32(Console.ReadLine());
+            //    Console.Write("Nome: ");
+            //    string name = Console.ReadLine();
+            //    Console.Write("Salário: ");
+            //    double salario = Convert.ToDouble(Console.ReadLine());
+            //    Console.WriteLine("=============================================");
+
+            //    funcionarios.Add(new Funcionarios(id, name, salario));
+            //}
+            //Console.WriteLine("Entre com o id do funcionário que irá receber o aumento: ");
+
+            //int encontrarID = Convert.ToInt32(Console.ReadLine());
+
+            //Funcionarios empregado = funcionarios.Find(x => x.Id == encontrarID);
+            //if (empregado != null)
+            //{
+            //    Console.Write("Entre com a porcentagem: ");
+            //    double porcentagem = Convert.ToDouble(Console.ReadLine());
+            //    porcentagem = porcentagem / 100;
+            //    empregado.AumentarSalario(porcentagem);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Esse Id não existe!");
+            //}
+
+            //Console.WriteLine();
+            //Console.WriteLine("Lista atualizada de funcionários");
+
+            //foreach (Funcionarios obj in funcionarios)
+            //{
+            //    Console.WriteLine(obj);
+            //}
+
+            //double[,] mat = new double[4,2];
+
+            //Console.WriteLine("Quantidade de Elementos Matriz: " + mat.Length);
+
+            //Console.WriteLine("Quantidade de linhas Matriz: " + mat.Rank);
+
+            //Console.WriteLine("Quantidade de Elementos tem por linha da Matriz: " + mat.GetLength(0));
+
+            //Console.WriteLine("Quantidade de Elementos tem por coluna da Matriz: " + mat.GetLength(1));
+
+
+            //Console.Write("Digite a ordem da matriz: ");
+            //int n = Convert.ToInt32(Console.ReadLine());
+
+            //int[,] mat = new int[n, n];
+
+            //for (int i = 0; i < n; i++)
+            //{
+            //    string[] values = Console.ReadLine().Split(' ');
+
+            //    for (int j = 0; j < n; j++)
+            //    {
+            //        mat[i, j] = Convert.ToInt32(values[j]);
+            //    }
+            //}
+
+            //Console.WriteLine("Elementos da diagonal principal:");
+
+            //for (int i=0; i < n; i++)
+            //{
+            //    Console.Write(mat[i, i] + " ");
+            //}
+            //Console.WriteLine();
+
+            //int count = 0;
+            //for (int i = 0; i < n; i++)
+            //{
+            //    for (int j = 0; j < n; j++)
+            //    {
+            //        if(mat[i,j] < 0)
+            //        {
+            //            count ++;
+            //        }
+            //    }
+            //}
+            //Console.WriteLine("Números negativos: " + count);
+
+
+            //Console.Write("Digite a qtde de linhas da matriz: ");
+            //int m = Convert.ToInt32(Console.ReadLine());
+
+            //Console.Write("Digite a qtde de colunas da matriz: ");
+            //int n = Convert.ToInt32(Console.ReadLine());
+
+            //int[,] matriz = new int[m, n];
+
+            //for (int i = 0; i < n; i++)
+            //{
+            //    string[] values = Console.ReadLine().Split(' ');
+
+            //    for (int j = 0; j < n; j++)
+            //    {
+            //        matriz[i, j] = Convert.ToInt32(values[j]);
+            //    }
+            //}
+
+            //Console.WriteLine("Digite o número a pesquisar na matriz");
+            //int x = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = 0; i < n; i++)
+            //{
+            //    for (int j = 0; j < n; j++)
+            //    {
+            //        if (matriz[i, j] == x)
+            //        {
+            //            Console.WriteLine("Posição " + i + "," + j + ":");
+            //            if (j > 0)
+            //            {
+            //                Console.WriteLine("Esquerda: " + matriz[i, j - 1]);
+            //            }
+            //            if (i > 0)
+            //            {
+            //                Console.WriteLine("Acima: " + matriz[i - 1, j]);
+            //            }
+            //            if (j < n - 1)
+            //            {
+            //                Console.WriteLine("Direita: " + matriz[i, j + 1]);
+            //            }
+            //            if (i < m - 1)
+            //            {
+            //                Console.WriteLine("Abaixo: " + matriz[i + 1, j]);
+            //            }
+            //        }
+            //    }
+            //}
         }
     }
 }
-
